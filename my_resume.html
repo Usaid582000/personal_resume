@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A website for my personal resume/protfolio">
+    <meta name="author" content="Usaid.D">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Chonburi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="my_r.css">
+    <link rel="stylesheet" href="queries.css">
+    <title>My Resume website</title>
+</head>
+
+<body>
+    <nav id="desknav">
+        <div class="logo">Usaid.D</div>
+        <div>
+            <ul class="navlink">
+                <li> <a href="#About">About</a></li>
+                <li> <a href="#Experience">Experience</a></li>
+                <li> <a href="#Projects">Projects</a></li>
+                <li> <a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="togg-nav">
+        <div class="logo">Usaid.D</div>
+        <div class="togg-menu">
+            <div class="togg-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-link">
+                <li> <a href="#About" onclick="toggMenu()">About</a></li>
+                <li> <a href="#Experience" onclick="toggMenu()">Experience</a></li>
+                <li> <a href="#Projects" onclick="toggMenu()">Projects</a></li>
+                <li> <a href="#Contact" onclick="toggMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <script src="jvspt.js"></script>
+
+
+</body>
+
+</html>
