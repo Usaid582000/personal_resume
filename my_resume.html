@@ -19,32 +19,94 @@
         <div class="logo">Usaid.D</div>
         <div>
             <ul class="navlink">
-                <li> <a href="#About">About</a></li>
-                <li> <a href="#Experience">Experience</a></li>
-                <li> <a href="#Projects">Projects</a></li>
-                <li> <a href="#Contact">Contact</a></li>
+                <li> <a href="#about">About</a></li>
+                <li> <a href="#experience">Experience</a></li>
+                <li> <a href="#projects">Projects</a></li>
+                <li> <a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
     <nav id="togg-nav">
         <div class="logo">Usaid.D</div>
         <div class="togg-menu">
-            <div class="togg-icon">
+            <div class="togg-icon" onclick="toggMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-            <div class="menu-link">
-                <li> <a href="#About" onclick="toggMenu()">About</a></li>
-                <li> <a href="#Experience" onclick="toggMenu()">Experience</a></li>
-                <li> <a href="#Projects" onclick="toggMenu()">Projects</a></li>
-                <li> <a href="#Contact" onclick="toggMenu()">Contact</a></li>
+            <div class="menu-links">
+                <li> <a href="#about" onclick="toggMenu()">About</a></li>
+                <li> <a href="#experience" onclick="toggMenu()">Experience</a></li>
+                <li> <a href="#projects" onclick="toggMenu()">Projects</a></li>
+                <li> <a href="#contact" onclick="toggMenu()">Contact</a></li>
             </div>
         </div>
     </nav>
-    <script src="jvspt.js"></script>
+    <section id="profile">
+        <div class="section_text">
+            <p class="sec-p1">Hello I'm</p>
+            <h1 class="title">Usaid.D</h1>
+            <p class="sec-p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn-color1" onclick="window.open('./asset/myresume.pdf')">Download CV</button>
+                <button class="btn-color2" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./asset/linkedin.png" alt="my linkedin page" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/usaid-d-8abb83292/'">
+                <img src="./asset/github.png" alt="my github page" class="icon"
+                    onclick="location.href='https://github.com/Usaid582000'">
+                <img src="./asset/upwork.png" alt="my upwork page" class="icon"
+                    onclick="location.href='https://www.upwork.com/freelancers/~016798fd01bb8c88ba'">
+                <img src="./asset/instagram.png" alt="my instagram page" class="icon"
+                    onclick="location.href='https://www.instagram.com/usaid_duldule4/?hl=en'">
 
-
+            </div>
+        </div>
+        <div class="section_pic-container">
+            <img src="./asset/usaidbg.jpeg" alt="my img" class="sec-pic">
+        </div>
+    </section>
+    <hr>
+    <section id="about">
+        <p class="sec-p1">Get to Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img src="./asset/usaidbg.jpeg" alt="my profile pic" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img src="./asset/progress.png" alt="progress" class="icon">
+                        <h3>Experience</h3>
+                        <p>3+years<br />Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./asset/education.png" alt="progress" class="icon">
+                        <h3>Education</h3>
+                        <p>Pursing Data Science<br />Bachelor's degree In Comp.Sci & Engg (Data science)</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident accusamus sunt officiis
+                        voluptates! Impedit soluta ratione commodi, officiis eius quae laudantium iure quaerat non. Non
+                        ducimus eaque optio adipisci! Voluptas, quod velit. Veniam placeat ea alias illum unde
+                        voluptatem quibusdam eum! Natus et molestias eum rerum quidem impedit laudantium incidunt?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function toggMenu() {
+            const menu = document.querySelector(".menu-links");
+            const icon = document.querySelector(".togg-icon");
+            menu.classList.toggle("open");
+            icon.classList.toggle("open");
+        }
+    </script>
 </body>
 
 </html>
