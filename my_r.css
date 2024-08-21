@@ -301,6 +301,7 @@ section {
 .about-containers {
     margin-top: 2rem;
     margin-bottom: 2rem;
+    margin-top: 2rem;
     gap: 2rem;
 }
 .about-details-container{
@@ -312,7 +313,7 @@ section {
 }
 .about-pic{
     width: 470px;
-    height: 500px;
+    height: 480px;
     border-radius: 2rem;
 }
 
@@ -326,10 +327,9 @@ section {
     padding: 3rem;
     border: 2px solid rgb(101, 101, 101);
 }
-.text-container {
-    margin-top: 1rem;
-    max-width: 25rem;
-}
+/* .text-container {
+    font-size: 1.3rem;
+} */
 .exp-sub-title{
     color: rgb(85, 85, 85);
     font-weight: 600;
@@ -369,4 +369,41 @@ article .icon{
 .project-title{
     margin: 1rem;
     color: black;
+}
+#contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+
+}
+.contact-info-up-container{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53);
+    border-color: rgb(9, 17, 46);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+.contact-info-container{
+    display: flex;
+align-items: center;
+justify-content: center;
+gap: 0.5rem;
+margin: 1rem;
+}
+.contact-info-container p{
+    font-size: larger;
+}
+.contact-icon{
+cursor: default;
+height: 2rem;
+}
+.footerlink{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+    color: rgb(53, 53, 53);
 }
