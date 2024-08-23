@@ -16,7 +16,9 @@
 
 <body>
     <nav id="desknav">
-        <div class="logo">Usaid.D</div>
+        <div class="logo">
+            Usaid.D
+        </div>
         <div>
             <ul class="navlink">
                 <li> <a href="#about">About</a></li>
@@ -45,11 +47,11 @@
     <section id="profile">
         <div class="section_text">
             <p class="sec-p1">Hello I'm</p>
-            <h1 class="title">Usaid.D</h1>
-            <p class="sec-p2">Frontend Developer</p>
-            <div class="btn-container">
-                <button class="btn-color1" onclick="window.open('./asset/myresume.pdf')">Download CV</button>
-                <button class="btn-color2" onclick="location.href='./#contact'">Contact Info</button>
+            <h1 class="title sectitle">Usaid.D</h1>
+            <p><span class="sec-p2"></span></p>
+            <div class="btn-container sec-btn">
+                <button class="btn btn-color1" onclick="window.open('./asset/myresume.pdf')">Download CV</button>
+                <button class="btn btn-color2" onclick="location.href='./#contact'">Contact Info</button>
             </div>
             <div id="socials-container">
                 <img src="./asset/linkedin.png" alt="my linkedin page" class="icon"
@@ -64,12 +66,12 @@
             </div>
         </div>
         <div class="section_pic-container">
-            <img src="./asset/usaidbg.jpeg" alt="my img" class="sec-pic">
+            <img src="./asset/usaidimg.png" alt="my img" class="sec-pic">
         </div>
     </section>
     <section id="about">
-        <p class="sec-p1">Get to Know More</p>
-        <h1 class="title">About Me</h1>
+        <p class="sec-p1 about-p1">Get to Know More</p>
+        <h1 class="title about-title">About Me</h1>
         <div class="section-container">
             <div class="section_pic-container">
                 <img src="./asset/usaidbg.jpeg" alt="my profile pic" class="about-pic" />
@@ -89,7 +91,7 @@
                 </div>
                 <div class="text-container">
                     <p>
-                        Hi My name is Usaid, I'm a
+                                      Hi My name is Usaid, I'm a
                         web developer with skills in HTML5, CSS3 and JavaScript, allowing me to build interactive
                         websites (interfaces, shopping page, documentaries.). I’m currently expanding my knowledge in
                         data Analysis and Graphic design. I'm a web developer with skills in HTML5, CSS3 and JavaScript,
@@ -222,8 +224,10 @@
         <h1 class="title">Contact Me</h1>
         <div class="content-info-up-container">
             <div class="contact-info-container">
+                <p><a href="mailto: usersmail@gmail.com">Send Mail at
+                        <h2>dulduleusaid5@gmail.com</h2>
+                    </a></p>
                 <img src="./asset/email.png" alt="email icon" class="icon contact-icon" />
-                <p><a href="mailto: exampleemail@gmail.com">dulduleusaid5@gmail.com</a></p>
             </div>
             <div class="contact-info-container">
                 <img src="./asset/linkedin.png" alt=" linkedIn icon" class="icon contact icon" />
@@ -231,17 +235,21 @@
             </div>
         </div>
     </section>
-    <footer><nav>
-        <div class="nav-links-container">
-            <ul class="footerlink">
-                <li> <a href="#about">About</a></li>
-                <li> <a href="#experience">Experience</a></li>
-                <li> <a href="#projects">Projects</a></li>
-                <li> <a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-</footer>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul id="footerlink">
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#experience">Experience</a></li>
+                    <li> <a href="#projects">Projects</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js">
+    </script>
     <script>
         function toggMenu() {
             const menu = document.querySelector(".menu-links");
@@ -249,6 +257,14 @@
             menu.classList.toggle("open");
             icon.classList.toggle("open");
         }
+        const typed = new Typed('.sec-p2', {
+            strings: ['Frontend Developer', 'Web designer'],
+            typedSpeed: 500,
+            backSpeed: 60,
+            backDelay: 1000,
+            loop: true,
+            cursorChar: '_',
+        });
     </script>
 </body>
 

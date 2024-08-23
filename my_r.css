@@ -11,6 +11,7 @@ html {
 p {
     color: rgb(85, 85, 85);
 }
+
 a,
 .btn {
     transition: all 300ms ease;
@@ -33,9 +34,11 @@ nav {
     list-style: none;
     font-size: 1.5rem;
 }
-.navlink li a{
+
+.navlink li a {
     color: white;
 }
+
 a {
     color: black;
     text-decoration: none;
@@ -48,7 +51,8 @@ a:hover {
     text-underline-offset: 1rem;
     text-decoration-color: rgb(101, 101, 101);
 }
-#desknav{
+
+#desknav {
     margin: 0;
     width: 100%;
     background-color: rgb(9, 17, 46);
@@ -86,7 +90,7 @@ a:hover {
     width: 100%;
     height: 2px;
 
-    background-color:white;
+    background-color: white;
     transition: all 0.3s ease-in-out;
 }
 
@@ -145,10 +149,10 @@ a:hover {
 
 section {
     padding-top: 4svh;
-    height: 96svh;
+    max-height: fit-content;
     margin: 0 10rem;
     box-sizing: border-box;
-    min-height: fit-content;
+    height:50rem;
 }
 
 .section-container {
@@ -162,24 +166,19 @@ section {
     display: flex;
     justify-content: space-evenly;
     gap: 5rem;
-    height: 80svh;
+    max-height: fit-content;
 }
-/* .section_pic-container {
-    display: flex;
-    height: 400px;
-    width: 400px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: auto 0;
-} */
+
 .sec-pic {
     display: flex;
-    height: 430px;
-    width: 470px;
     border-radius: 50%;
     overflow: hidden;
+    width: 36rem;
+    height: 36rem;
+    object-fit: cover;
     margin: auto 0;
 }
+
 .section_text {
     cursor: default;
     align-self: center;
@@ -196,7 +195,7 @@ section {
 }
 
 .sec-p2 {
-    font-size: 5rem;
+    font-size: 3rem;
     margin-bottom: 3rem;
 }
 
@@ -304,17 +303,24 @@ section {
     margin-top: 2rem;
     gap: 2rem;
 }
-.about-details-container{
+
+.about-details-container {
     justify-content: center;
     flex-direction: column;
 }
-.about-containers,.about-details-container{
+
+.about-containers,
+.about-details-container {
     display: flex;
 }
-.about-pic{
-    width: 470px;
-    height: 480px;
-    border-radius: 2rem;
+
+.about-pic {
+    margin-top: 2rem;
+    width: 30rem;
+    object-fit: cover;
+    height: 30rem;
+    overflow: hidden;
+    border-radius: 20%;
 }
 
 .details-container {
@@ -327,57 +333,68 @@ section {
     padding: 3rem;
     border: 2px solid rgb(101, 101, 101);
 }
-/* .text-container {
+
+.text-container {
     font-size: 1.3rem;
-} */
-.exp-sub-title{
+}
+.exp-sub-title {
     color: rgb(85, 85, 85);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
 }
-.exp-details-container{
+
+.exp-details-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-.article-container{
+
+.article-container {
     display: flex;
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2.5rem;
-    justify-content: space-between;
+    justify-content: center;
 }
-article{
+
+article {
     display: flex;
     width: 10rem;
     gap: 0.5rem;
 }
-article .icon{
+
+article .icon {
     cursor: default;
 }
-.color-container{
+
+.color-container {
     border-color: rgb(9, 17, 46);
     background: rgb(200, 200, 200);
 }
-.project-img{
+
+.project-img {
+    
     border-radius: 2rem;
     width: 95%;
     height: 90%;
 }
-.project-title{
+
+.project-title {
     margin: 1rem;
     color: black;
 }
-#contact{
+
+#contact {
     display: flex;
     justify-content: center;
     flex-direction: column;
     height: 70vh;
 
 }
-.contact-info-up-container{
+
+.contact-info-up-container {
     display: flex;
     justify-content: center;
     border-radius: 2rem;
@@ -386,24 +403,39 @@ article .icon{
     margin: 2rem auto;
     padding: 0.5rem;
 }
-.contact-info-container{
+
+.contact-info-container {
     display: flex;
-align-items: center;
-justify-content: center;
-gap: 0.5rem;
-margin: 1rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
 }
-.contact-info-container p{
+
+.contact-info-container p {
     font-size: larger;
 }
-.contact-icon{
-cursor: default;
-height: 2rem;
+
+.contact-icon {
+    cursor: default;
+    height: 2rem;
 }
-.footerlink{
+
+footer {
+    background-color: rgb(9, 17, 46);
+    /* color: white; */
+}
+
+#footerlink {
     display: flex;
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
-    color: rgb(53, 53, 53);
 }
+#footerlink li a{
+color: white;
+}
+#footerlink li a:hover{
+    color: gray;
+}
+
