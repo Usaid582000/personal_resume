@@ -17,15 +17,14 @@
     margin: 2rem 0 0 0;
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(./asset/usaidbg.jpeg);
 }
+.details-container{
+    padding: 0.5rem;
+}
 .about-details-container{
     padding-bottom: 3rem;
 }
-.about-p1,.text-container p{
-    color: white;
-}
-.about-title{
-    color: rgb(200, 240, 240);
-}
+
+
     section {
         flex-wrap: wrap;
         margin: 0 2rem;

@@ -8,6 +8,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: rgb(140, 198, 224);
+}
+
 p {
     color: rgb(85, 85, 85);
 }
@@ -37,6 +41,9 @@ nav {
 
 .navlink li a {
     color: white;
+}
+.navlink li a:hover{
+    color: gray;
 }
 
 a {
@@ -152,7 +159,7 @@ section {
     max-height: fit-content;
     margin: 0 10rem;
     box-sizing: border-box;
-    height:50rem;
+    height: 50rem;
 }
 
 .section-container {
@@ -169,16 +176,29 @@ section {
     max-height: fit-content;
 }
 
+@keyframes floater{
+    /* 50%{
+        transform: translateY(10px)
+    }
+    25%{transform: translateX(5px)} */
+    50%{
+        transform: scale3d(1.05,1.05,1)
+    }
+}
 .sec-pic {
     display: flex;
+    border: 2px solid rgb(9, 17, 46);
     border-radius: 50%;
     overflow: hidden;
     width: 36rem;
     height: 36rem;
     object-fit: cover;
     margin: auto 0;
+    animation-name: floater;
+    animation-duration:3s;
+    animation-timing-function:cubic-bezier(0.555, 0.415, 0.15, 0.16);
+    animation-iteration-count: infinite;
 }
-
 .section_text {
     cursor: default;
     align-self: center;
@@ -253,7 +273,7 @@ section {
     right: 0;
     height: 100%;
     position: absolute;
-    background-color: rgb(85, 85, 85);
+    background-color: rgb(9, 17, 46);
     transition: all 0.3s linear;
 }
 
@@ -281,7 +301,7 @@ section {
     left: 0;
     height: 100%;
     position: absolute;
-    background-color: rgb(85, 85, 85);
+    background-color: rgb(9, 17, 46);
     transition: all 0.3s linear;
 }
 
@@ -297,10 +317,31 @@ section {
     gap: 1rem;
 }
 
+#about {
+    margin: auto auto 6rem auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./asset/usaidbg.jpeg);
+}
+
+.about-con {
+    padding: 2rem;
+}
+
+.about-title {
+    color: rgb(200, 240, 240);
+}
+
+.about-p1,
+.text-container p {
+    color: white;
+}
+
+.text-container p {
+    font-size: 1.3rem;
+}
+
 .about-containers {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    margin-top: 2rem;
     gap: 2rem;
 }
 
@@ -334,9 +375,7 @@ section {
     border: 2px solid rgb(101, 101, 101);
 }
 
-.text-container {
-    font-size: 1.3rem;
-}
+
 .exp-sub-title {
     color: rgb(85, 85, 85);
     font-weight: 600;
@@ -370,12 +409,18 @@ article .icon {
 }
 
 .color-container {
-    border-color: rgb(9, 17, 46);
-    background: rgb(200, 200, 200);
+    border: 3px solid rgb(0, 90, 143);
+    background: rgb(0, 90, 143);
+    transition: all 0.5s ease;
+}
+
+.color-container:hover {
+    border-color: rgb(52, 115, 131);
+    background: rgb(9, 140, 216);
 }
 
 .project-img {
-    
+
     border-radius: 2rem;
     width: 95%;
     height: 90%;
@@ -432,10 +477,11 @@ footer {
     list-style: none;
     font-size: 1.5rem;
 }
-#footerlink li a{
-color: white;
-}
-#footerlink li a:hover{
-    color: gray;
+
+#footerlink li a {
+    color: white;
 }
 
+#footerlink li a:hover {
+    color: gray;
+}
